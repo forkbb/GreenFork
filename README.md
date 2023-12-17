@@ -4,6 +4,7 @@ Style for ForkBB
 ## Install
 
 Скопируйте css файлы и папку /reactions/ из архива в папку /public/style/GreenFork/ своего форума.
+
 Copy the css files and the /reactions/ folder from the archive to the /public/style/GreenFork/ folder of your forum.
 
 ## Links
