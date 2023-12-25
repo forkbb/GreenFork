@@ -291,6 +291,13 @@ body,
 }
 
 #fork .f-mheader {
+  display: none;
+}
+
+#fork.pg-forum .f-mheader,
+#fork.pg-topic .f-mheader,
+#fork.pg-profile-view .f-mheader {
+  display: block;
   padding: 0.625rem;
   border: 0.25rem solid var(--br-fh1);
   border-radius: 0.625rem;
@@ -1023,6 +1030,16 @@ body,
   display: inline;
   font: 400 0.875rem "fa";
   content: " \f0f3"; /* f06e */
+}
+
+#fork .f-crumb:first-child .f-crumb-a::before {
+  display: inline-block;
+  font: 900 0.875rem "fa";
+  content: " \f015";
+}
+
+#fork .f-crumb:first-child .f-crumb-a > span {
+  display: none;
 }
 
 #fork .f-nav-links .f-actions-links,
