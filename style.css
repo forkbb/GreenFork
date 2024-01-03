@@ -26,10 +26,12 @@
   --bg-like-nav: hsl(148, 41%, 97%);
   --c-light: hsl(210, 6%, 21%);
   --c-tsticky: hsl(0, 100%, 50%);
+  --bg-tsticky: hsl(0, 100%, 95%);
   --c-faggr: hsl(357, 75%, 50%);
   --c-faggr-pr: hsl(0, 0%, 20%);
   --bg-faggr: hsl(0, 100%, 86%);
   --c-tclosed: hsl(0, 0%, 70%);
+  --bg-tclosed: hsl(0, 0%, 95%);
   --c-tpoll: hsl(148, 74%, 36%);
   --c-req: hsl(0, 100%, 50%);
   --bg-bbcode: hsl(0, 0%, 94%);
@@ -1531,9 +1533,13 @@ body,
   opacity: 0.6;
 }
 
-/*#fork .f-fsticky .f-ficon::before {
-  color: var(--c-tsticky);
-}*/
+#fork .f-fsticky {
+  background-color: var(--bg-tsticky);
+}
+
+#fork .f-fclosed {
+  background-color: var(--bg-tclosed);
+}
 
 #fork .f-tsticky::before {
   font: 900 0.875rem "fa";
@@ -1816,6 +1822,31 @@ body,
   #fork .f-post-body::after {
     border-bottom: 0.625rem solid var(--bg-post-b);
     top: -1.14rem;
+  }
+
+  #fork .f-user-info-toggle {
+    display: flex;
+    position: absolute;
+    top: 0.1875rem;
+    inset-inline-end: 0.1875rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 0.0625rem solid var(--c-fprimary);
+    border-radius: 1.25rem;
+    background-color: var(--bg-fprimary);
+    justify-content: center;
+    align-items: center;
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  #fork .f-user-info-toggle::before {
+    font: 900 0.875rem "fa";
+    content: "\f129";
+  }
+
+  #fork .f-user-info-checkbox:not(:checked) ~ .f-user-info-add {
+    display: none;
   }
 }
 
