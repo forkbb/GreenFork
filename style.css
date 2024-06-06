@@ -46,6 +46,7 @@
   --c-reaction-sel: hsl(120, 100%, 50%);
   --bg-reaction: hsl(148, 41%, 99%);
   --br-reaction: hsl(148, 41%, 80%);
+  --c-post-cf-n: hsl(148, 100%, 30%);
 }
 
 /*******************/
@@ -1746,6 +1747,10 @@ body,
 
 #fork .f-post-customfield {
   text-indent: 1rem;
+}
+
+#fork .f-post-cf-name {
+  color: var(--c-post-cf-n);
 }
 
 #fork .f-post-bfooter {
