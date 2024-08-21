@@ -1328,7 +1328,9 @@ body,
 }
 
 #fork .f-ftlist .f-row {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   border-bottom: 0.0625rem solid var(--br-fprimary);
   padding: 0.3125rem;
 }
@@ -1346,6 +1348,7 @@ body,
 #fork .f-ftlist .f-cmain {
   display: flex;
   flex-wrap: nowrap;
+  width: 100%;
 }
 
 #fork .f-ftlist .f-ficon {
@@ -1369,7 +1372,8 @@ body,
 }
 
 #fork .f-ftlist .f-clast {
-  display: none;
+  display: flex;
+  font-size: 0.75rem;
 }
 
 #fork .f-ftlist .f-fdesc {
@@ -1453,9 +1457,18 @@ body,
   padding: 0 0.25rem;
 }
 
+#fork .f-ftlist .f-clposter,
+#fork .f-ftlist .f-cltime,
+#fork .f-ftlist .f-cltname {
+  display: none;
+}
+
+#fork .f-ftlist .f-clttime {
+  display: inline;
+}
+
 @media screen and (min-width: 50rem) {
   #fork .f-ftlist .f-row {
-    display: flex;
     flex-wrap: nowrap;
   }
 
@@ -1484,6 +1497,7 @@ body,
   #fork .f-ftlist .f-cltopic,
   #fork .f-ftlist .f-clposter,
   #fork .f-ftlist .f-cltime {
+    display: block;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -1492,6 +1506,14 @@ body,
 
   #fork .f-ftlist .f-cltime {
     font-size: 0.75rem;
+  }
+
+  #fork .f-ftlist .f-cltname {
+    display: inline;
+  }
+
+  #fork .f-ftlist .f-clttime {
+    display: none;
   }
 }
 
@@ -1750,6 +1772,10 @@ body,
   padding: 0.3125rem;
   background-color: var(--bg-post-b);
   position: relative;
+}
+
+#fork .f-post-body > .f-iswev-wrap {
+  margin: 0.3125rem;
 }
 
 #fork .f-post-main {
