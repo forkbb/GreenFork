@@ -1870,6 +1870,40 @@ body,
   content: "\f015";
 }
 
+.f-social-link .f-psfont::before {
+  font-family: "fab";
+  font-weight: 400;
+  content: "?";
+}
+
+.f-sn-github .f-psfont::before {
+  content: "\f09b";
+}
+
+.f-sn-telegram .f-psfont::before {
+  content: "\f2c6";
+}
+
+.f-sn-tiktok .f-psfont::before {
+  content: "\e07b";
+}
+
+.f-sn-reddit .f-psfont::before {
+  content: "\f1a1";
+}
+
+.f-sn-mastodon .f-psfont::before {
+  content: "\f4f6";
+}
+
+.f-sn-stackoverflow .f-psfont::before {
+  content: "\f16c";
+}
+
+.f-sn-flickr .f-psfont::before {
+  content: "\f16e";
+}
+
 .f-email .f-psfont::before {
   content: "\f0e0"; /*\40*/
 }
