@@ -68,6 +68,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'fab';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../font/fa/fa-brands-400.v.60702.woff2") format("woff2");
+  font-display: swap;
+}
+
 html,
 body,
 #fork,
