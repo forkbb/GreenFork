@@ -864,7 +864,8 @@ body,
 }
 
 #fork .f-flblch,
-#fork .f-label {
+#fork .f-label,
+#fork .f-ychk {
   cursor: pointer;
 }
 
