@@ -843,6 +843,12 @@ body,
 #fork .f-fbtn[name="delete"]:not(.origin),
 #fork .f-fbtn[name="report"]:not(.origin) {
   color: red;
+
+  &:hover,
+  &:focus {
+    color: var(--c-focus);
+    background-color: red;
+  }
 }
 
 #fork .f-flblch,
