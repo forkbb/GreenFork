@@ -9,7 +9,7 @@ Copy the css files and the /reactions/ folder from the archive to the /public/st
 
 ## Links
 
-* Homepage: https://forkbb.ru/
+* Homepage: https://forkbb.org/
 * GitHub: https://github.com/forkbb/GreenFork
 
 ## License
